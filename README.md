@@ -13,7 +13,15 @@ Copied RestDataConfig into config package
 Copied application.properties into the file
 
 Part D:
-
+Cart.java: lines 15-52 used UML diagram to map columns to database
+CartItem.java: lines 15-52 used UML diagram to map columns to database and used Enum annotation
+Country.java: lines 12-34 used UML diagram to map columns to database
+Customer.java: lines 13-51 used UML diagram to map columns to database
+Division.java: lines 12-38 used UML diagram to map columns to database
+Excursion.java: lines 13-42 used UML diagram to map columns to database
+StatusType.java: lines 2-3 stores entity from annotation in cart.java
+Vacation.java: lines 13-44 used UML diagram to map columns to database
+RestDataConfiguration.java: line 3 changed import to entity file location
 Part E:
 
 Part F:

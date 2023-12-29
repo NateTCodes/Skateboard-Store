@@ -22,8 +22,15 @@ Excursion.java: lines 13-42 used UML diagram to map columns to database
 StatusType.java: lines 2-3 stores entity from annotation in cart.java
 Vacation.java: lines 13-44 used UML diagram to map columns to database
 RestDataConfiguration.java: line 3 changed import to entity file location
-Part E:
 
+Part E:
+CartItemRepository: lines 7-8, created interface that extends the respective jpa repo
+CartRepository: lines 7-8, created interface that extends the respective jpa repo
+CountryRepository: lines 7-8, created interface that extends the respective jpa repo
+CustomerRepository: lines 7-8, created interface that extends the respective jpa repo
+DivisionRepository: lines 7-8, created interface that extends the respective jpa repo
+ExcursionRepository: lines 7-8, created interface that extends the respective jpa repo
+VacationRepository: lines 7-8, created interface that extends the respective jpa repo
 Part F:
 
 Part G:

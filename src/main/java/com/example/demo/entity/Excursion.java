@@ -36,6 +36,10 @@ public class Excursion {
     @UpdateTimestamp
     private Date last_update;
 
+    @ManyToOne
+    @JoinColumn(name = "Vacation_ID")
+    private Vacation vacation;
+
     @ManyToMany
     @JoinTable(name = "excursion_cartitem", joinColumns = @JoinColumn(name = "excursion_id"),
         inverseJoinColumns = @JoinColumn(name = "cart_item_id"))

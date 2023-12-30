@@ -45,5 +45,8 @@ Part G:
 Customer.java: lines 23-35, added validation to fields that require inputs from customer
 
 Part H:
+Created a new java class under controller package
+CheckoutController.java: lines 8-20, created code using post mapping to for placing orders
+
 
 Part I:

@@ -42,6 +42,7 @@ Customer.java: lines 53-59, created conditions to add items to order
 Cart.java: lines 54-60, created conditions to add items to order
 
 Part G:
+Customer.java: lines 23-35, added validation to fields that require inputs from customer
 
 Part H:
 

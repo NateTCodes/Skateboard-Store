@@ -20,19 +20,19 @@ public class Customer {
     @Column(name = "Customer_ID")
     private Long id;
 
-    @Column(name = "Customer_First_Name")
+    @Column(name = "Customer_First_Name", nullable = false)
     private String firstName;
 
-    @Column(name = "Customer_Last_Name")
+    @Column(name = "Customer_Last_Name", nullable = false)
     private String lastName;
 
-    @Column(name = "Address")
+    @Column(name = "Address", nullable = false)
     private String address;
 
-    @Column(name = "Postal_Code")
+    @Column(name = "Postal_Code", nullable = false)
     private String postal_code;
 
-    @Column(name = "Phone")
+    @Column(name = "Phone", nullable = false)
     private String phone;
 
     @Column(name = "Create_Date")

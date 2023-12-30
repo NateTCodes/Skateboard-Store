@@ -49,4 +49,14 @@ public class Customer {
 
     @OneToMany(mappedBy = "customer")
     private Set<Cart> carts = new HashSet<>();
+
+    public void add(Cart cart) {
+        if (cart != null) {
+            if (carts == null) {
+                carts = new HashSet<>();
+            }
+            carts.add(cart);
+            cart.setCustomer(this);
+        }
+    }
 }

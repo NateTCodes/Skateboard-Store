@@ -31,7 +31,15 @@ CustomerRepository: lines 7-8, created interface that extends the respective jpa
 DivisionRepository: lines 7-8, created interface that extends the respective jpa repo
 ExcursionRepository: lines 7-8, created interface that extends the respective jpa repo
 VacationRepository: lines 7-8, created interface that extends the respective jpa repo
+
 Part F:
+Created four new java classes under the services package
+Purchase.java: lines 10-14, created Purchase class that will handle purchasing 
+PurchaseResponse.java: lines 5-7, created a PurchaseResponse class for tracking number that cannot be changed once it is made
+CheckoutService.java: lines 3-4, created a checkout service class that will return purchase response class when purchased
+CheckoutImpl: lines 19-46 implemented code to retrieve order, generate a tracking number, populate items and create a unique UUID
+Customer.java: lines 53-59, created conditions to add items to order
+Cart.java: lines 54-60, created conditions to add items to order
 
 Part G:
 

@@ -40,14 +40,14 @@ public class Cart {
     @JoinColumn(name = "customer_ID")
     private Customer customer;
 
-    @OneToMany(mappedBy = "cart")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "cart")
     private Set<CartItem> cartItems = new HashSet<>();
 
     @Column(name = "Create_Date")
     @CreationTimestamp
     private Date create_date;
 
-    @Column
+    @Column(name = "Last_Update")
     @UpdateTimestamp
     private Date last_update;
 

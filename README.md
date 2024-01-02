@@ -48,5 +48,12 @@ Part H:
 Created a new java class under controller package
 CheckoutController.java: lines 8-20, created code using post mapping to for placing orders
 
-
 Part I:
+BootStrapData.java: lines 9-59, created 5 new customers to the database and saving them
+Customer.java: lines 62-70, created customer constructor and initialized variables needing inputs
+
+Additional fixes:
+Cart.java: line 43, added cascading due to cart item not populating in sql
+Fix to populate excursion_cartitem in sql
+Excursion.java: lines 43-44, mapped many-many relationship differently which was taken from CartItem.java and changing variables as needed
+Cartitem.java: lines 26-30, originally in excursion.java, added to this file and changed accordingly to fit in

@@ -1,59 +1,108 @@
-<strong> **DO NOT DISTRIBUTE OR PUBLICLY POST SOLUTIONS TO THESE LABS. MAKE ALL FORKS OF THIS REPOSITORY WITH SOLUTION CODE PRIVATE. PLEASE REFER TO THE STUDENT CODE OF CONDUCT AND ETHICAL EXPECTATIONS FOR COLLEGE OF INFORMATION TECHNOLOGY STUDENTS FOR SPECIFICS. ** </strong>
-# WESTERN GOVERNOR UNIVERSITY 
-## D288 – BACK-END PROGRAMMING
-Welcome to Back-End Programming! This is an opportunity for students to develop object-oriented applications that can be integrated with relational databases, write code for object-oriented applications using Spring framework, and implements design patterns for object-oriented applications. 
-FOR SPECIFIC TASK INSTRUCTIONS AND REQUIREMENTS FOR THIS ASSESSMENT, PLEASE REFER TO THE COURSE PAGE.
-## BASIC INSTRUCTIONS
-For this project, you will be building your project using IntelliJ IDEA (Ultimate Edition) in a WGU-provided lab environment. You will be working with an existing MySQL database and Angular front-end, which are supplied for you in the lab environment. You will share this project to a private external GitLab repository and backup regularly. If you wish to work on it on your local machine, you will also need to download the Angular front-end application and create your own MySQL database. Use the links on your course page to install the integrated development environments (IDE), MySQL WorkBench, and IntelliJ IDEA, and pull the project from the lab environment.  
+# Vacation Rental Booking Website
 
+## Project Description
 
-Part C:
-Created six new packages to create new files in
-Copied RestDataConfig into config package
-Copied application.properties into the file
+This project is a vacation rental booking website designed to provide users with a seamless experience in searching for and booking vacation rentals. The website includes features such as amenities management, order confirmation, and real-time booking tracking. This project was designed following UML diagrams to ensure comprehensive planning and efficient implementation.
 
-Part D:
-Cart.java: lines 15-52 used UML diagram to map columns to database
-CartItem.java: lines 15-52 used UML diagram to map columns to database and used Enum annotation
-Country.java: lines 12-34 used UML diagram to map columns to database
-Customer.java: lines 13-51 used UML diagram to map columns to database
-Division.java: lines 12-38 used UML diagram to map columns to database
-Excursion.java: lines 13-42 used UML diagram to map columns to database
-StatusType.java: lines 2-3 stores entity from annotation in cart.java
-Vacation.java: lines 13-44 used UML diagram to map columns to database
-RestDataConfiguration.java: line 3 changed import to entity file location
+## Features
 
-Part E:
-CartItemRepository: lines 7-8, created interface that extends the respective jpa repo
-CartRepository: lines 7-8, created interface that extends the respective jpa repo
-CountryRepository: lines 7-8, created interface that extends the respective jpa repo
-CustomerRepository: lines 7-8, created interface that extends the respective jpa repo
-DivisionRepository: lines 7-8, created interface that extends the respective jpa repo
-ExcursionRepository: lines 7-8, created interface that extends the respective jpa repo
-VacationRepository: lines 7-8, created interface that extends the respective jpa repo
+- **User-Friendly Booking Interface**: Easily search and book vacation rentals.
+- **Amenities Management**: Add and manage amenities for each rental property.
+- **Order Confirmation**: Receive instant booking confirmations.
+- **Booking Tracking**: Track the status of your bookings in real-time.
+- **Multithreaded Language Translation**: Support for messages across diverse time zones.
+- **Currency Exchange Integration**: Enhance global usability by supporting multiple currencies.
 
-Part F:
-Created four new java classes under the services package
-Purchase.java: lines 10-14, created Purchase class that will handle purchasing 
-PurchaseResponse.java: lines 5-7, created a PurchaseResponse class for tracking number that cannot be changed once it is made
-CheckoutService.java: lines 3-4, created a checkout service class that will return purchase response class when purchased
-CheckoutImpl: lines 19-46 implemented code to retrieve order, generate a tracking number, populate items and create a unique UUID
-Customer.java: lines 53-59, created conditions to add items to order
-Cart.java: lines 54-60, created conditions to add items to order
+## Technologies Used
 
-Part G:
-Customer.java: lines 23-35, added validation to fields that require inputs from customer
+- **Frontend**: Angular
+- **Backend**: Spring Boot, Java
+- **Database**: MySQL
+- **Containerization**: Docker
+- **Version Control**: Git
+- **Others**: UML diagrams for planning and design
 
-Part H:
-Created a new java class under controller package
-CheckoutController.java: lines 8-20, created code using post mapping to for placing orders
+## Installation
 
-Part I:
-BootStrapData.java: lines 9-59, created 5 new customers to the database and saving them
-Customer.java: lines 62-70, created customer constructor and initialized variables needing inputs
+### Prerequisites
 
-Additional fixes:
-Cart.java: line 43, added cascading due to cart item not populating in sql
-Fix to populate excursion_cartitem in sql
-Excursion.java: lines 43-44, mapped many-many relationship differently which was taken from CartItem.java and changing variables as needed
-Cartitem.java: lines 26-30, originally in excursion.java, added to this file and changed accordingly to fit in
+- Node.js
+- Angular CLI
+- Java JDK
+- Spring Boot
+- MySQL
+- Docker (optional, for containerization)
+
+### Steps
+
+1. **Clone the repository**:
+    ```bash
+    git clone https://github.com/NateTCodes/Vacation-Website.git
+    cd Vacation-Website
+    ```
+
+2. **Backend Setup**:
+    - Navigate to the `backend` directory:
+        ```bash
+        cd src/main
+        ```
+    - Update `application.properties` with your MySQL database credentials.
+    - Build the Spring Boot application:
+        ```bash
+        ./mvnw clean install
+        ```
+    - Run the Spring Boot application:
+        ```bash
+        ./mvnw spring-boot:run
+        ```
+
+3. **Frontend Setup**:
+    - Navigate to the `frontend` directory:
+        ```bash
+        cd D288 Front End
+        ```
+    - Install dependencies:
+        ```bash
+        npm install
+        ```
+    - Start the Angular application:
+        ```bash
+        ng serve
+        ```
+
+4. **Access the Application**:
+    - Open your web browser and navigate to `http://localhost:4200`.
+
+## Usage
+
+- **Search and Book Rentals**: Use the search functionality to find available rentals, view details, and make bookings.
+- **Manage Amenities**: Property owners can add and update amenities for their rentals.
+- **Track Bookings**: Users can track their booking status and receive order confirmations.
+
+## Project Structure
+
+- **frontend**: Contains the Angular application.
+- **backend**: Contains the Spring Boot application.
+- **docs**: Contains UML diagrams and other documentation.
+
+## Contributing
+
+We welcome contributions to this project! If you have any ideas, suggestions, or improvements, please open an issue or submit a pull request.
+
+### Steps to Contribute
+
+1. Fork the repository.
+2. Create a new branch:
+    ```bash
+    git checkout -b feature-branch
+    ```
+3. Make your changes and commit them:
+    ```bash
+    git commit -m "Description of changes"
+    ```
+4. Push to the branch:
+    ```bash
+    git push origin feature-branch
+    ```
+5. Open a pull request and describe your changes.
+
